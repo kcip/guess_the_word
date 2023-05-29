@@ -11,11 +11,38 @@
 </head>
 
 <body>
-  <div class="container">
-    <!-- <img id="laughImg" alt="" /> -->
-    <h3>Don't Laugh Challenge</h3>
-    <p>Please, please don't laugh</p>
-  </div>
+  <main class="main">
+    <div class="content">
+      <div class="content_top">
+        <div class="word_wrapper" id="wordWrapper"></div>
+      </div>
+      <div class="content_img">
+        <img src="assets/waves-4.svg" alt="waves" />
+        <div class="animation_container">
+          <div class="shark">
+            <img src="assets/shark.gif" alt="image of shark swimming" />
+          </div>
+          <div class="corgi">
+            <img src="assets/corgiswimflip.gif" alt="image of corgi swimming" />
+          </div>
+        </div>
+      </div>
+      <div class="content_bottom">
+        <div class="letters_wrapper" id="lettersWrapper">
+          <div class="letters_wrapper-container" id="lettersContainer"></div>
+        </div>
+        <div class="new_game_wrapper">
+          <button id="newGame">new game</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal_start" id="modalStart"></div>
+    </div>
+    <div class="modal_definition" id="modalDefinition"></div>
+    <div class="modal_gameOver" id="gameOver">
+      <h2 class="modal_gameOver-h2">Game Over</h2>
+    </div>
+  </main>
 </body>
 
 </html>
