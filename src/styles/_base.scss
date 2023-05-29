@@ -1,0 +1,38 @@
+body {
+	background-color: var(--clr-background);
+	font-family: var(--ff-primary);
+	color: var(--font-color-primary);
+	position: relative;
+}
+
+.shark {
+	display: none;
+	position: absolute;
+	width: 170px;
+	height: 100px !important;
+	right: 5px;
+	bottom: -14px !important;
+	opacity: 0;
+}
+.corgi {
+	display: none;
+	position: absolute;
+	width: 70px;
+	height: 70px !important;
+	left: 5px;
+	bottom: -22px !important;
+	opacity: 0;
+}
+.add {
+	display: block;
+	animation: appear 300ms ease-in forwards 800ms;
+}
+
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
