@@ -38,6 +38,16 @@
 		@content;
 	}
 }
+@mixin verySmallScreen {
+	@media (max-width: 325px) {
+		@content;
+	}
+}
+@mixin phoneSmallScreen {
+	@media (max-width: 399px) {
+		@content;
+	}
+}
 @mixin mediumScreen {
 	@media (min-width: 400px) and (max-width: 490px) {
 		@content;

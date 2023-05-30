@@ -28,6 +28,12 @@
 	&-span {
 		color: var(--fc-black);
 		font-size: var(--fs-xl);
+		@include phoneSmallScreen {
+			font-size: var(--fs-lg);
+		}
+		@include verySmallScreen {
+			font-size: var(--fs-sm);
+		}
 	}
 	&-p {
 		color: var(--fc-secondary);
@@ -39,6 +45,12 @@
 	&-selectContainer {
 		@include flexColumn;
 		margin-top: 18vh;
+		@include phoneSmallScreen {
+			margin-top: 21vh;
+		}
+		@include verySmallScreen {
+			margin-top: 7vh;
+		}
 		fieldset {
 			border: transparent;
 			margin-top: 1rem;
@@ -265,11 +277,17 @@
 	width: 75px;
 	height: auto;
 	animation: corgiStart linear 5300ms infinite both;
+	@include phoneSmallScreen {
+		width: 60px;
+	}
 }
 .modal_start-corgi {
 	position: absolute;
 	left: 0;
 	@include sharkAndDogHeight;
+	@include verySmallScreen {
+		display: none;
+	}
 }
 //GAME LEVEL START ALERT
 .level-alert {

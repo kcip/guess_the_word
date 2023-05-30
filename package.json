@@ -1,13 +1,18 @@
 {
   "name": "guess_the_word",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/kcip/guess_the_word.git"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "webpack serve"
   },
-  "keywords": [],
+  "keywords": [ ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
